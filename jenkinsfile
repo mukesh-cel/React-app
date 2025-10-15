@@ -3,6 +3,7 @@ pipeline{
     environment{
         DOCKERHUB_CREDS = credentials('dockerhub')
         IMAGE_NAME = "mukesh1997/reactapp"
+    }
     stages{
         stage("git clone"){
             steps{
